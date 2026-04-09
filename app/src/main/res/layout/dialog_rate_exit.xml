@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/bg_dialog_rounded"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/btnClose"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_close"
+        android:layout_gravity="end" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_star"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enjoying our App?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please rate us or exit the app"
+        android:textSize="14sp"
+        android:textColor="#666"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:id="@+id/btnRate"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="⭐ Rate App"
+        android:backgroundTint="#FFD700"
+        android:textColor="#000"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Exit App"
+        android:backgroundTint="#FF5252"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

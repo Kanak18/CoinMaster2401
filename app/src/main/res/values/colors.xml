@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- SPIN LINK Icon Theme Colors -->
+    <color name="icon_blue">#2196F3</color>           <!-- Bright blue background from icon -->
+    <color name="icon_magenta">#E91E63</color>        <!-- Magenta/hot pink from left container -->
+    <color name="icon_cyan">#00BCD4</color>           <!-- Light blue/cyan from middle container -->
+    <color name="icon_yellow">#FFC107</color>         <!-- Bright yellow from right container -->
+    <color name="icon_brown">#8D6E63</color>          <!-- Brown from container caps -->
+    <color name="icon_white">#FFFFFF</color>          <!-- White text and symbols -->
+    
+    <!-- Rich Theme Colors Based on Icon -->
+    <color name="primary">#2196F3</color>             <!-- Icon blue as primary -->
+    <color name="primary_dark">#1976D2</color>        <!-- Darker blue -->
+    <color name="primary_light">#BBDEFB</color>       <!-- Light blue -->
+    <color name="accent">#E91E63</color>              <!-- Icon magenta as accent -->
+    <color name="secondary">#00BCD4</color>           <!-- Icon cyan as secondary -->
+    <color name="highlight">#FFC107</color>           <!-- Icon yellow as highlight -->
+    <color name="earth_accent">#8D6E63</color>        <!-- Icon brown as earth accent -->
+    
+    <!-- Background and Surface Colors -->
+    <color name="background">#F5F5F5</color>          <!-- Light gray background -->
+    <color name="card_bg">#FFFFFF</color>             <!-- White cards -->
+    <color name="surface_light">#FAFAFA</color>       <!-- Very light surface -->
+    <color name="surface_dark">#212121</color>        <!-- Dark surface for contrast -->
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>        <!-- Dark text -->
+    <color name="text_secondary">#757575</color>      <!-- Medium gray text -->
+    <color name="text_light">#FFFFFF</color>          <!-- White text -->
+    <color name="text_accent">#E91E63</color>         <!-- Magenta accent text -->
+    
+    <!-- Button and Interactive Colors -->
+    <color name="button_primary">#2196F3</color>      <!-- Blue buttons -->
+    <color name="button_accent">#E91E63</color>       <!-- Magenta accent buttons -->
+    <color name="button_secondary">#00BCD4</color>    <!-- Cyan secondary buttons -->
+    <color name="button_highlight">#FFC107</color>    <!-- Yellow highlight buttons -->
+    <color name="button_text">#FFFFFF</color>         <!-- White button text -->
+    
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#2196F3</color>      <!-- Blue gradient start -->
+    <color name="gradient_middle">#00BCD4</color>     <!-- Cyan gradient middle -->
+    <color name="gradient_end">#E91E63</color>        <!-- Magenta gradient end -->
+    
+    <!-- Status and Feedback Colors -->
+    <color name="success">#4CAF50</color>             <!-- Green for success -->
+    <color name="warning">#FFC107</color>             <!-- Yellow for warnings -->
+    <color name="error">#F44336</color>               <!-- Red for errors -->
+    <color name="info">#2196F3</color>                <!-- Blue for info -->
+    
+    <!-- Legacy Colors (keeping for compatibility) -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="darker_gray">#555555</color>
+    <color name="dialogBackground">#1F1F1F</color>
+    <color name="buttonText">#FFFFFF</color>
+    
+    <!-- Material Design theme colors -->
+    <color name="colorPrimaryContainer">#E3F2FD</color>
+    <color name="colorSecondaryContainer">#E0F7FA</color>
+    <color name="colorTertiaryContainer">#FFF3E0</color>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.coinmasterspinlink.cmspinmaster">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CoinMaster">
+        <activity
+            android:name=".cm_guide"
+            android:exported="false" />
+        <activity
+            android:name=".SpinRewardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpinList"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <!-- Sample AdMob app ID: ca-app-pub-7449564617644870~9264235286 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7449564617644870~9264235286" />
+        <meta-data
+            android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING"
+            android:value="true" /> <!-- OneSignal Configuration -->
+        <meta-data
+            android:name="onesignal_app_id"
+            android:value="dc849f08-8280-410a-8c4f-82d0832c3947" />
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+    </application>
+
+</manifest>

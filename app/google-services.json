@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "332552698385",
+    "project_id": "coinmasterspinlink-2401",
+    "storage_bucket": "coinmasterspinlink-2401.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332552698385:android:c0567476389a0b4e624fb0",
+        "android_client_info": {
+          "package_name": "com.coinmasterspinlink.cmspinmaster"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRkKdVFj7ZpdC32ju9hdAaVcVz00F_owg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

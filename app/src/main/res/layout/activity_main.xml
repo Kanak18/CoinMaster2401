@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/button_primary"
+        android:title="@string/app_name"
+        app:titleCentered="true"
+        android:titleTextColor="?attr/colorOnPrimary"
+        app:layout_scrollFlags="scroll|enterAlways" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="80dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Slogan -->
+            <TextView
+                android:id="@+id/appSlogan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_slogan"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textColor="@color/text_primary"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Coin & Spin Links -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/ltSpin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:strokeColor="@color/icon_white"
+                    app:strokeWidth="1dp"
+                    android:layout_marginEnd="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/success"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/spinButton"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/ic_coin"
+                            android:tint="@color/white"
+                            android:contentDescription="Coin Links" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coin Links"
+                            android:textColor="@color/card_bg"
+                            android:textStyle="bold"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/ltCoin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:strokeColor="@color/icon_white"
+                    app:strokeWidth="1dp"
+                    android:layout_marginStart="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/accent"
+                        android:gravity="center"
+                        android:padding="16dp">
+
+                        <ImageView
+                            android:id="@+id/coinButton"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/ic_spin"
+                            android:tint="@color/white"
+                            android:contentDescription="Spin Links" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Spin Links"
+                            android:textColor="@color/card_bg"
+                            android:textStyle="bold"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <!-- CM Guide Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/faqGuide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FAQ SECTION"
+                style="@style/Widget.MaterialComponents.Button"
+                app:cornerRadius="16dp"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                app:iconGravity="textStart"
+                app:iconPadding="8dp"
+                app:iconTint="?attr/colorOnPrimary"
+                android:backgroundTint="@color/button_accent" />
+
+            <!-- Rate, Share, Privacy Policy -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="2dp"
+                    app:strokeColor="@color/icon_white"
+                    app:strokeWidth="1dp"
+
+                    android:layout_marginEnd="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/secondary"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:id="@+id/rateButton"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:tint="@color/white"
+                            android:src="@drawable/ic_rate"
+                            android:contentDescription="Rate" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rate"
+                            android:textColor="@color/card_bg"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="2dp"
+                    app:strokeColor="@color/icon_white"
+                    app:strokeWidth="1dp"
+
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/info"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:id="@+id/shareButton"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_share"
+                            android:tint="@color/white"
+                            android:contentDescription="Share" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Share"
+                            android:textColor="@color/card_bg"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/LayPolicy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="2dp"
+                    app:strokeColor="@color/icon_white"
+                    app:strokeWidth="1dp"
+                    android:layout_marginStart="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/error"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:id="@+id/privacyPolicyButton"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:src="@drawable/ic_privacy"
+                            android:tint="@color/white"
+                            android:contentDescription="Privacy Policy" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Privacy"
+                            android:textColor="@color/card_bg"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Ad Container at the bottom -->
+    <FrameLayout
+        android:id="@+id/ad_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="?attr/colorSurface"
+        android:elevation="4dp"
+        android:layout_margin="0dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
