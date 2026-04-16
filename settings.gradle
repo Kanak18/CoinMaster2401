@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DemoBanner"
+rootProject.name = "CoinMaster2401"
 include ':app'

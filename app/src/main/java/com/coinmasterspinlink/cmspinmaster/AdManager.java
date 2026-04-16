@@ -126,7 +126,7 @@ public class AdManager {
                 Log.w(TAG, "Banner Ad ID is null or empty. Skipping ad load.");
                 return;
             }
-            
+
             adView = new AdView(context);
             adView.setAdUnitId(App.bannerAdId);
             adView.setAdSize(getAdSize(context));
@@ -203,7 +203,7 @@ public class AdManager {
             Log.w(TAG, "Interstitial Ad ID is null or empty. Skipping ad load.");
             return;
         }
-        
+
         AdRequest adRequest = new AdRequest.Builder().build();
         Log.d(TAG, "Load Interstital: " + App.interstitialAdId);
         InterstitialAd.load(
@@ -277,7 +277,7 @@ public class AdManager {
             Log.w(TAG, "Rewarded Ad ID is null or empty. Skipping ad load.");
             return;
         }
-        
+
         AdRequest adRequest = new AdRequest.Builder().build();
         RewardedAd.load(activity, App.rewardAdId, // Replace with your Rewarded Ad ID
                 adRequest, new RewardedAdLoadCallback() {
